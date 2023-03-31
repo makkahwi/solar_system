@@ -8,6 +8,7 @@ import Mars from "./Planets/Mars";
 import Jupiter from "./Planets/Jupiter";
 import Saturn from "./Planets/Saturn";
 import Uranus from "./Planets/Uranus";
+import Neptune from "./Planets/Neptune";
 
 export default function ThreeDModel() {
   return (
@@ -34,6 +35,8 @@ export default function ThreeDModel() {
         <Saturn position={[8.5, 4, 0]} rotateX={2} rotateY={0.2} />
 
         <Uranus position={[-1, 6, 0]} rotateX={2} rotateY={0.2} />
+
+        <Neptune position={[-7.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
 
         <Controls />
       </Canvas>
