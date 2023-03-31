@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function PlanetPath({ ...props }) {
+export default function PlanetPath({ size, position, color, ...props }) {
   const myMeshMesh = useRef();
 
   return (
@@ -12,10 +12,10 @@ export default function PlanetPath({ ...props }) {
       ref={myMeshMesh}
     >
       <ringBufferGeometry
-        args={[props.position - props.size / 2, props.position, 100]}
+        args={[position - size / 2, position + size / 2, 100]}
       />
 
-      <meshPhysicalMaterial color={props.color} />
+      <meshPhysicalMaterial color={color} />
     </mesh>
   );
 }
