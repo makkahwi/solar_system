@@ -13,9 +13,18 @@ First Three.js Project
 
 - <strike>Resize planet paths</strike>
 - <strike>Fix planet rotation to keep vertical axis fixed</strike>
-- Double check planet acutal sizes
+- <strike>Double check planet acutal sizes</strike>
+- Fix planet wrapping photo direction
 - Add intorductory texts (tooltips to planets)
+- Add controls holding bar
 - Add "earth days" counter
 - Add interactive controls
-  - Speed control
+  - Rotation speed control (actual vs illustration-friendly vs custom)
+  - Keyboard-based control
   - Reset camera position
+  - Planet sizes (actual vs illustration-friendly)
+- Add planet audios
+- Add planet events
+  - Earth Solar Eclipse
+  - Earth Lunar Eclipse
+  - Planets Line Up
