@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber";
+import { Fragment } from "react";
 import Controls from "./Controls";
 import RotatingPlanet from "./RotatingPlanet";
 import Sun from "./Sun";
@@ -27,7 +28,17 @@ export default function ThreeDModel() {
         <Sun position={[0, 0, 0]} />
 
         {planets.map(({ ...props }, i) => (
-          <RotatingPlanet key={i} {...props} />
+          <Fragment key={i}>
+            <RotatingPlanet {...props} />
+
+            <mesh visible rotation={[0, 0, 0]} castShadow position={[0, 0, 0]}>
+              <ringBufferGeometry
+                args={[props.position - props.size / 2, props.position, 100]}
+              />
+
+              <meshPhysicalMaterial color={props.color} />
+            </mesh>
+          </Fragment>
         ))}
 
         <Controls />
