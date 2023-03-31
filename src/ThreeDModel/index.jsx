@@ -36,7 +36,7 @@ export default function ThreeDModel() {
 
         <Uranus position={[-1, 6, 0]} rotateX={2} rotateY={0.2} />
 
-        <Neptune position={[-7.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
+        <Neptune position={[-7.5, 1.75, 0]} rotateX={2} rotateY={0.2} />
 
         <Controls />
       </Canvas>
