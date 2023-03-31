@@ -1,10 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import Controls from "./Controls";
-import Draggable from "./Draggable";
 import Mercury from "./Planets/Mercury";
 import Venus from "./Planets/Venus";
 import Sun from "./Sun";
 import Earth from "./Planets/Earth";
+import Mars from "./Planets/Mars";
 
 export default function ThreeDModel() {
   return (
@@ -18,17 +18,13 @@ export default function ThreeDModel() {
 
         <Sun position={[0, 0, 0]} />
 
-        <Draggable>
-          <Mercury position={[-2.75, 1, 0]} rotateX={2} rotateY={0.2} />
-        </Draggable>
+        <Mercury position={[-2.75, 1, 0]} rotateX={2} rotateY={0.2} />
 
-        <Draggable>
-          <Venus position={[3.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
-        </Draggable>
+        <Venus position={[3.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
 
-        <Draggable>
-          <Earth position={[-2.75, 3.5, 0]} rotateX={2} rotateY={0.2} />
-        </Draggable>
+        <Earth position={[-2.75, 3.5, 0]} rotateX={2} rotateY={0.2} />
+
+        <Mars position={[2, -8, 0]} rotateX={2} rotateY={0.2} />
 
         <Controls />
       </Canvas>
