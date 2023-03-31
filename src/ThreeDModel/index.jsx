@@ -1,16 +1,20 @@
 import { Canvas } from "@react-three/fiber";
 import Controls from "./Controls";
-import Mercury from "./Planets/Mercury";
-import Venus from "./Planets/Venus";
+import RotatingPlanet from "./RotatingPlanet";
 import Sun from "./Sun";
-import Earth from "./Planets/Earth";
-import Mars from "./Planets/Mars";
-import Jupiter from "./Planets/Jupiter";
-import Saturn from "./Planets/Saturn";
-import Uranus from "./Planets/Uranus";
-import Neptune from "./Planets/Neptune";
 
 export default function ThreeDModel() {
+  const planets = [
+    { name: "mercury", speed: 48, position: 1.75, color: "white", size: 0.2 },
+    { name: "venus", speed: 35, position: 2.5, color: "orange", size: 0.34 },
+    { name: "earth", speed: 30, position: 3.5, color: "#388cf3", size: 0.4 },
+    { name: "mars", speed: 24, position: 4.5, color: "red", size: 0.3 },
+    { name: "jupiter", speed: 13, position: 6, color: "orange", size: 0.75 },
+    { name: "saturn", speed: 10, position: 8, color: "yellow", size: 0.75 },
+    { name: "uranus", speed: 7, position: 10, color: "lightBlue", size: 0.5 },
+    { name: "neptune", speed: 5, position: 11.5, color: "purple", size: 0.4 },
+  ];
+
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <Canvas
@@ -22,21 +26,9 @@ export default function ThreeDModel() {
 
         <Sun position={[0, 0, 0]} />
 
-        <Mercury position={1.75} rotateX={2} rotateY={0.2} />
-
-        <Venus position={2.5} rotateX={2} rotateY={0.2} />
-
-        <Earth position={3.5} rotateX={2} rotateY={0.2} />
-
-        <Mars position={4.5} rotateX={2} rotateY={0.2} />
-
-        <Jupiter position={6} rotateX={2} rotateY={0.2} />
-
-        <Saturn position={8} rotateX={2} rotateY={0.2} />
-
-        <Uranus position={10} rotateX={2} rotateY={0.2} />
-
-        <Neptune position={11.5} rotateX={2} rotateY={0.2} />
+        {planets.map(({ ...props }, i) => (
+          <RotatingPlanet key={i} {...props} />
+        ))}
 
         <Controls />
       </Canvas>
