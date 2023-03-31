@@ -1,1 +1,3 @@
-# Three.Js Resume Website
+# 3D Solar System
+
+First Three.js Project
