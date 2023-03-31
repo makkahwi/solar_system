@@ -14,7 +14,7 @@ export default function ThreeDModel() {
         style={{ backgroundColor: "#262435" }}
         camera={{ position: [-8, 7, 7] }}
       >
-        <ambientLight color="white" intensity={0.2} />
+        <ambientLight color="white" intensity={0.4} />
 
         <Sun position={[0, 0, 0]} />
 
