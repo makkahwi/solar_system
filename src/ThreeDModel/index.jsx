@@ -23,7 +23,7 @@ export default function ThreeDModel() {
         </Draggable>
 
         <Draggable>
-          <Venus position={[3, 2, 0]} rotateX={2} rotateY={0.2} />
+          <Venus position={[3.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
         </Draggable>
 
         <Draggable>
