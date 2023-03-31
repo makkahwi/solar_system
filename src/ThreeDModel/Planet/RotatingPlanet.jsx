@@ -43,9 +43,5 @@ export default function RotatingPlanet({
     );
   }
 
-  return (
-    <Fragment id={name}>
-      <Rotating />
-    </Fragment>
-  );
+  return <Rotating />;
 }
