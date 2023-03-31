@@ -4,6 +4,7 @@ import Draggable from "./Draggable";
 import Mercury from "./Planets/Mercury";
 import Venus from "./Planets/Venus";
 import Sun from "./Sun";
+import Earth from "./Planets/Earth";
 
 export default function ThreeDModel() {
   return (
@@ -23,6 +24,10 @@ export default function ThreeDModel() {
 
         <Draggable>
           <Venus position={[3, 2, 0]} rotateX={2} rotateY={0.2} />
+        </Draggable>
+
+        <Draggable>
+          <Earth position={[-2.75, 3.5, 0]} rotateX={2} rotateY={0.2} />
         </Draggable>
 
         <Controls />
