@@ -1,3 +1,4 @@
+import { planetsScale } from "@/utils/consts";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
 
@@ -8,7 +9,7 @@ export default function Sun(props) {
   return (
     <mesh {...props}>
       <pointLight castShadow />
-      <sphereBufferGeometry args={[sunSize, 30, 10]} />
+      <sphereBufferGeometry args={[sunSize * planetsScale, 30, 10]} />
       <meshPhongMaterial emissive="#d24d00" map={texture} />
     </mesh>
   );
