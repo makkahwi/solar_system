@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import ThreeDModel from "@/ThreeDModel";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>Hello</main>
+      <main>
+        <ThreeDModel />
+      </main>
     </>
   );
 }
