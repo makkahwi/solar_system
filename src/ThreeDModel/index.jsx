@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import Mercury from "./Mercury";
-import Sun from "./Sun";
 import Controls from "./Controls";
 import Draggable from "./Draggable";
+import Mercury from "./Mercury";
+import Sun from "./Sun";
 
 export default function ThreeDModel() {
   return (
@@ -17,7 +17,7 @@ export default function ThreeDModel() {
         <Sun position={[0, 0, 0]} />
 
         <Draggable>
-          <Mercury position={[1, 3, 1]} rotateX={2} rotateY={0.2} />
+          <Mercury position={[-2.75, 1, 0]} rotateX={2} rotateY={0.2} />
         </Draggable>
 
         <Controls />
