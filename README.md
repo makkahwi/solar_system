@@ -8,3 +8,7 @@ First Three.js Project
 - [Reference Photo](./public/Reference.jpg)
 - [Building Planet Path](https://www.tutorialspoint.com/how-to-make-a-ring-in-react-using-reactthree-fiber)
 - [General Reference](https://threejs.org/docs/)
+
+## To Do
+
+- Fix planet rotation to keep verical axis fixed
