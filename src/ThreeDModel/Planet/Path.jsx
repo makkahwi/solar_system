@@ -19,7 +19,7 @@ export default function PlanetPath({ size, position, color, photo, ...props }) {
         args={[position - size / 4, position + size / 4, 100]}
       />
 
-      <meshPhysicalMaterial color={color} />
+      <meshPhysicalMaterial color="rgba(255,255,255,0.05)" />
     </mesh>
   );
 }
