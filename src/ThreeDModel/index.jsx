@@ -21,7 +21,7 @@ export default function ThreeDModel() {
       <Canvas
         shadows
         style={{ backgroundColor: "#262435" }}
-        camera={{ position: [0, 0, 16] }}
+        camera={{ position: [2, -15, 5] }}
       >
         <ambientLight color="white" intensity={0.4} />
 
