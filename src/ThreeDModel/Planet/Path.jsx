@@ -1,7 +1,11 @@
+import { useLoader } from "@react-three/fiber";
 import { useRef } from "react";
+import { TextureLoader } from "three";
 
-export default function PlanetPath({ size, position, color, ...props }) {
+export default function PlanetPath({ size, position, color, photo, ...props }) {
   const myMeshMesh = useRef();
+
+  const texture = useLoader(TextureLoader, photo);
 
   return (
     <mesh
@@ -12,7 +16,7 @@ export default function PlanetPath({ size, position, color, ...props }) {
       ref={myMeshMesh}
     >
       <ringBufferGeometry
-        args={[position - size / 2, position + size / 2, 100]}
+        args={[position - size / 4, position + size / 4, 100]}
       />
 
       <meshPhysicalMaterial color={color} />

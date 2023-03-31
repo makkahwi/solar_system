@@ -1,7 +1,7 @@
 import { useFrame } from "@react-three/fiber";
-import { useState } from "react";
-import { useRef } from "react";
-import { Fragment } from "react";
+import { useRef, useState } from "react";
+import { useLoader } from "@react-three/fiber";
+import { TextureLoader } from "three";
 
 export default function RotatingPlanet({
   color,
@@ -9,6 +9,7 @@ export default function RotatingPlanet({
   speed,
   position: initialPosition,
   size,
+  photo,
   ...props
 }) {
   function Rotating() {
@@ -28,6 +29,8 @@ export default function RotatingPlanet({
       ]);
     });
 
+    const texture = useLoader(TextureLoader, photo);
+
     return (
       <mesh
         {...props}
@@ -38,7 +41,7 @@ export default function RotatingPlanet({
       >
         <sphereBufferGeometry args={[size, 30, 10]} />
 
-        <meshPhysicalMaterial color={color} />
+        <meshPhysicalMaterial map={texture} />
       </mesh>
     );
   }
