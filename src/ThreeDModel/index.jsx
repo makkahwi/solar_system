@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Fragment } from "react";
+
 import Controls from "./Controls";
 import Planet from "./Planet";
 import Sun from "./Sun";
@@ -11,7 +12,7 @@ export default function ThreeDModel() {
       speed: 48,
       position: 1.75,
       color: "white",
-      size: 0.2,
+      size: 4879.4, // acutal diameter by KM
       photo: "/mercury.jpg",
     },
     {
@@ -19,7 +20,7 @@ export default function ThreeDModel() {
       speed: 35,
       position: 2.5,
       color: "orange",
-      size: 0.34,
+      size: 12104,
       photo: "/venus.jpg",
     },
     {
@@ -27,7 +28,7 @@ export default function ThreeDModel() {
       speed: 30,
       position: 3.5,
       color: "#388cf3",
-      size: 0.4,
+      size: 12742,
       photo: "/earth.jpg",
     },
     {
@@ -35,7 +36,7 @@ export default function ThreeDModel() {
       speed: 24,
       position: 4.5,
       color: "red",
-      size: 0.3,
+      size: 6779,
       photo: "/mars.jpg",
     },
     {
@@ -43,7 +44,7 @@ export default function ThreeDModel() {
       speed: 13,
       position: 6,
       color: "orange",
-      size: 0.75,
+      size: 139820,
       photo: "/jupter.jpg",
     },
     {
@@ -51,7 +52,7 @@ export default function ThreeDModel() {
       speed: 10,
       position: 8,
       color: "yellow",
-      size: 0.75,
+      size: 116460,
       photo: "/saturn.jpg",
     },
     {
@@ -59,7 +60,7 @@ export default function ThreeDModel() {
       speed: 7,
       position: 10,
       color: "lightBlue",
-      size: 0.5,
+      size: 50724,
       photo: "/uranus.jpg",
     },
     {
@@ -67,7 +68,7 @@ export default function ThreeDModel() {
       speed: 5,
       position: 11.5,
       color: "purple",
-      size: 0.4,
+      size: 49244,
       photo: "/neptune.jpg",
     },
   ];
