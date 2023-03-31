@@ -11,4 +11,11 @@ First Three.js Project
 
 ## To Do
 
-- Fix planet rotation to keep verical axis fixed
+- <strike>Resize planet paths</strike>
+- Fix planet rotation to keep vertical axis fixed
+- Double check planet acutal sizes
+- Add intorductory texts (tooltips to planets)
+- Add "earth days" counter
+- Add interactive controls
+  - Speed control
+  - Reset camera position
