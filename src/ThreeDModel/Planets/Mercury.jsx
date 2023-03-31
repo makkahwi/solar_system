@@ -4,7 +4,8 @@ export default function Mercury(props) {
   return (
     <Fragment id="mercury">
       <mesh {...props} receiveShadow castShadow>
-        <sphereBufferGeometry args={[0.2, 30, 10]} />
+        <sphereBufferGeometry args={[0.175, 30, 10]} />
+
         <meshPhysicalMaterial color="white" />
       </mesh>
     </Fragment>
