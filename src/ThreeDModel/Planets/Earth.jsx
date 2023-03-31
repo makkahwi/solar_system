@@ -1,13 +1,12 @@
-import { Fragment } from "react";
+import RotatingPlanet from "./RotatingPlanet";
 
 export default function Earth(props) {
   return (
-    <Fragment id="earth">
-      <mesh {...props} receiveShadow castShadow>
-        <sphereBufferGeometry args={[0.3, 30, 10]} />
-
-        <meshPhysicalMaterial color="#388cf3" />
-      </mesh>
-    </Fragment>
+    <RotatingPlanet
+      args={[0.3, 30, 10]}
+      color="#388cf3"
+      planetName="earth"
+      {...props}
+    />
   );
 }
