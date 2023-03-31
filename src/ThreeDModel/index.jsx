@@ -16,27 +16,27 @@ export default function ThreeDModel() {
       <Canvas
         shadows
         style={{ backgroundColor: "#262435" }}
-        camera={{ position: [0, 0, 12] }}
+        camera={{ position: [0, 0, 16] }}
       >
         <ambientLight color="white" intensity={0.4} />
 
         <Sun position={[0, 0, 0]} />
 
-        <Mercury position={[-2.15, -0.35, 0]} rotateX={2} rotateY={0.2} />
+        <Mercury position={1.75} rotateX={2} rotateY={0.2} />
 
-        <Venus position={[1.9, 2.1, 0]} rotateX={2} rotateY={0.2} />
+        <Venus position={2.5} rotateX={2} rotateY={0.2} />
 
-        <Earth position={[-2.65, 2.25, 0]} rotateX={2} rotateY={0.2} />
+        <Earth position={3.5} rotateX={2} rotateY={0.2} />
 
-        <Mars position={[0.85, -4, 0]} rotateX={2} rotateY={0.2} />
+        <Mars position={4.5} rotateX={2} rotateY={0.2} />
 
-        <Jupiter position={[-4, -3.75, 0]} rotateX={2} rotateY={0.2} />
+        <Jupiter position={6} rotateX={2} rotateY={0.2} />
 
-        <Saturn position={[4.75, 5.25, 0]} rotateX={2} rotateY={0.2} />
+        <Saturn position={8} rotateX={2} rotateY={0.2} />
 
-        <Uranus position={[-1, 7, 0]} rotateX={2} rotateY={0.2} />
+        <Uranus position={10} rotateX={2} rotateY={0.2} />
 
-        <Neptune position={[-8.25, -2.75, 0]} rotateX={2} rotateY={0.2} />
+        <Neptune position={11.5} rotateX={2} rotateY={0.2} />
 
         <Controls />
       </Canvas>

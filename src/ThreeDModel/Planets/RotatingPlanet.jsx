@@ -14,10 +14,40 @@ export default function RotatingPlanet({
     const [position, setPosition] = useState(initialPosition);
     const myMesh = useRef();
 
+    const planetSpeed = () => {
+      switch (planetName) {
+        case "mercury":
+          return 48;
+        case "venus":
+          return 35;
+        case "earth":
+          return 30;
+        case "mars":
+          return 24;
+        case "jupiter":
+          return 13;
+        case "saturn":
+          return 10;
+        case "uranus":
+          return 7;
+        case "neptune":
+          return 5;
+        default:
+          return 1;
+      }
+    };
+
     useFrame(({ clock }) => {
       const a = clock.getElapsedTime();
       myMesh.current.rotation.z = a;
-      setPosition([initialPosition[0], initialPosition[1], initialPosition[2]]);
+
+      const newValue = initialPosition + (a * planetSpeed()) / 50;
+
+      setPosition([
+        initialPosition * Math.cos(newValue),
+        initialPosition * Math.sin(newValue),
+        0,
+      ]);
     });
 
     return (
@@ -26,7 +56,7 @@ export default function RotatingPlanet({
         receiveShadow
         castShadow
         ref={myMesh}
-        position={initialPosition}
+        position={position}
       >
         <sphereBufferGeometry args={args} />
 
