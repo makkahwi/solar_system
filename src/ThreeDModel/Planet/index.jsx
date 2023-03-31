@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import PlanetPath from "./Path";
 import RotatingPlanet from "./RotatingPlanet";
 
 export default function Planet({ ...props }) {
@@ -6,13 +7,7 @@ export default function Planet({ ...props }) {
     <Fragment>
       <RotatingPlanet {...props} />
 
-      <mesh visible rotation={[0, 0, 0]} castShadow position={[0, 0, 0]}>
-        <ringBufferGeometry
-          args={[props.position - props.size / 2, props.position, 100]}
-        />
-
-        <meshPhysicalMaterial color={props.color} />
-      </mesh>
+      <PlanetPath {...props} />
     </Fragment>
   );
 }
