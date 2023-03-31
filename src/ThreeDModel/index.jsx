@@ -22,21 +22,21 @@ export default function ThreeDModel() {
 
         <Sun position={[0, 0, 0]} />
 
-        <Mercury position={[-2.75, 1, 0]} rotateX={2} rotateY={0.2} />
+        <Mercury position={[-2.15, -0.35, 0]} rotateX={2} rotateY={0.2} />
 
-        <Venus position={[3.25, 1.5, 0]} rotateX={2} rotateY={0.2} />
+        <Venus position={[1.9, 2.1, 0]} rotateX={2} rotateY={0.2} />
 
-        <Earth position={[-2.75, 3.5, 0]} rotateX={2} rotateY={0.2} />
+        <Earth position={[-2.65, 2.25, 0]} rotateX={2} rotateY={0.2} />
 
-        <Mars position={[2, -8, 0]} rotateX={2} rotateY={0.2} />
+        <Mars position={[0.85, -4, 0]} rotateX={2} rotateY={0.2} />
 
-        <Jupiter position={[-5.25, -1.75, 0]} rotateX={2} rotateY={0.2} />
+        <Jupiter position={[-4, -3.75, 0]} rotateX={2} rotateY={0.2} />
 
-        <Saturn position={[9, 3.5, 0]} rotateX={2} rotateY={0.2} />
+        <Saturn position={[4.75, 5.25, 0]} rotateX={2} rotateY={0.2} />
 
-        <Uranus position={[-1, 6, 0]} rotateX={2} rotateY={0.2} />
+        <Uranus position={[-1, 7, 0]} rotateX={2} rotateY={0.2} />
 
-        <Neptune position={[-7.5, 1.75, 0]} rotateX={2} rotateY={0.2} />
+        <Neptune position={[-8.25, -2.75, 0]} rotateX={2} rotateY={0.2} />
 
         <Controls />
       </Canvas>
