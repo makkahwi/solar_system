@@ -16,7 +16,7 @@ export default function PlanetPath({ size, position, color, photo, ...props }) {
       ref={myMeshMesh}
     >
       <ringBufferGeometry
-        args={[position - size / 4, position + size / 4, 100]}
+        args={[position - size / 10, position + size / 10, 100]}
       />
 
       <meshPhysicalMaterial color="rgba(255,255,255,0.05)" />

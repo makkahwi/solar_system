@@ -1,6 +1,6 @@
 import { useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
 import { useLoader } from "@react-three/fiber";
+import { useRef, useState } from "react";
 import { TextureLoader } from "three";
 
 export default function RotatingPlanet({
@@ -18,7 +18,7 @@ export default function RotatingPlanet({
 
     useFrame(({ clock }) => {
       const a = clock.getElapsedTime();
-      myMesh.current.rotation.z = a;
+      myMesh.current.rotation.y = a;
 
       const newValue = initialPosition + (a * speed) / 50;
 
