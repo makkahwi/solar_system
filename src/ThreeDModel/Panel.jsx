@@ -9,10 +9,18 @@ export default function Panel() {
         minHeight: "10vh",
         color: "white",
         width: "100vw",
-        padding: "2.55vh 2.55vw",
+        padding: "3vh 2.5vw",
       }}
     >
-      Panel
+      <h4 style={{ textAlign: "center" }}>
+        Use your mouse's left & right buttons for camera (view point) control
+      </h4>
+
+      <small>
+        <a href="https://suhaib.dev/" target="_blank">
+          Suhaib Ahmad
+        </a>
+      </small>
     </div>
   );
 }
