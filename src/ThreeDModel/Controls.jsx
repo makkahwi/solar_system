@@ -32,6 +32,9 @@ function Control(props) {
           camera.position.x = 2;
           camera.position.y = -16;
           camera.position.z = 5;
+          camera.rotation.x = 1.267911458419925;
+          camera.rotation.y = 0.11874866284286384;
+          camera.rotation.z = -0.36236320608912587;
           break;
         default:
           console.log("click " + e.key + " is not useable in the app");
