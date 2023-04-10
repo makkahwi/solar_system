@@ -1,18 +1,18 @@
 import { extend, useThree } from "@react-three/fiber";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { MapControls } from "three/examples/jsm/controls/MapControls";
 
-extend({ OrbitControls });
+extend({ MapControls });
 
-function Controls(props) {
+function Control(props) {
   const { camera, gl } = useThree();
 
   return (
-    <orbitControls
+    <mapControls
       {...props}
-      attach={"orbitControls"}
+      attach={"mapControls"}
       args={[camera, gl.domElement]}
     />
   );
 }
 
-export default Controls;
+export default Control;
