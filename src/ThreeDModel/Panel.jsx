@@ -1,4 +1,6 @@
 export default function Panel() {
+  const keyboardControls = ["-", "+", "↑", "↓", "→", "←"];
+
   return (
     <div
       style={{
@@ -13,8 +15,11 @@ export default function Panel() {
       }}
     >
       <h4 style={{ textAlign: "center" }}>
-        Use your mouse's left & right buttons for camera (view point) control
+        You can use your mouse's left & right buttons for camera (view point)
+        control. Or use keyboard conrols of...
       </h4>
+
+      <h4 style={{ textAlign: "center" }}>{keyboardControls.join(" ")}</h4>
 
       <small>
         <a href="https://suhaib.dev/" target="_blank">
