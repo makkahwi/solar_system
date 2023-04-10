@@ -17,11 +17,9 @@ function Control(props) {
           camera.position.y -= 1;
           break;
         case "ArrowUp":
-          // camera.position.y += 1;
           camera.position.z += 1;
           break;
         case "ArrowDown":
-          // camera.position.y -= 1;
           camera.position.z -= 1;
           break;
         case "ArrowLeft":
@@ -29,6 +27,11 @@ function Control(props) {
           break;
         case "ArrowRight":
           camera.position.x += 1;
+          break;
+        case "0":
+          camera.position.x = 2;
+          camera.position.y = -16;
+          camera.position.z = 5;
           break;
         default:
           console.log("click " + e.key + " is not useable in the app");
