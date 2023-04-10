@@ -20,6 +20,7 @@ export default function RotatingPlanet({
       const a = clock.getElapsedTime();
       myMesh.current.rotation.y = a;
       myMesh.current.rotation.x = 4.5;
+      // myMesh.current.rotation.z = a;
 
       const newValue = initialPosition + (a * speed) / 50;
 
