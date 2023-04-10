@@ -14,9 +14,9 @@ First Three.js Project
 - <strike>Resize planet paths</strike>
 - <strike>Fix planet rotation to keep vertical axis fixed</strike>
 - <strike>Double check planet acutal sizes</strike>
+- <strike>Add controls holding bar</strike>
 - Fix planet wrapping photo direction
 - Add intorductory texts (tooltips to planets)
-- Add controls holding bar
 - Add "earth days" counter
 - Add interactive controls
   - Rotation speed control (actual vs illustration-friendly vs custom)
