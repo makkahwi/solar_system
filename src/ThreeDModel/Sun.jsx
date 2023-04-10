@@ -13,7 +13,7 @@ export default function Sun(props) {
     const a = clock.getElapsedTime();
     // myMesh.current.rotation.x = a;
     // myMesh.current.rotation.y = a;
-    myMesh.current.rotation.z = -a;
+    myMesh.current.rotation.z = a;
   });
 
   return (

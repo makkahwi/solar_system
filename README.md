@@ -19,9 +19,9 @@ First Three.js Project
 - Add intorductory texts (tooltips to planets)
 - Add "earth days" counter
 - Add interactive controls
+  - <strike>Keyboard-based control</strike>
+  - <strike>Reset camera position</strike>
   - Rotation speed control (actual vs illustration-friendly vs custom)
-  - Keyboard-based control
-  - Reset camera position
   - Planet sizes (actual vs illustration-friendly)
 - Add planet audios
 - Add planet events
