@@ -78,13 +78,13 @@ export default function ThreeDModel() {
     <div
       style={{
         width: "100vw",
-        height: "100vh",
+        height: "90vh",
         backgroundImage: 'url("bg.jpg")',
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
     >
-      <Canvas shadows camera={{ position: [2, -15, 5] }}>
+      <Canvas shadows camera={{ position: [2, -16, 5] }}>
         <ambientLight color="white" intensity={0.4} />
 
         <Sun position={[0, 0, 0]} />
