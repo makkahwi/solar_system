@@ -1,5 +1,5 @@
 export default function Panel() {
-  const keyboardControls = ["-", "+", "↑", "↓", "→", "←", "0"];
+  const keyboardControls = ["-", "+", "↑", "↓", "→", "←", "0", "x", "y", "z"];
 
   return (
     <div
