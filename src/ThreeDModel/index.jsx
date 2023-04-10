@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { Fragment } from "react";
 
 import Controls from "./Controls";
+import Panel from "./Panel";
 import Planet from "./Planet";
 import Sun from "./Sun";
 
@@ -74,16 +75,16 @@ export default function ThreeDModel() {
   ];
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <Canvas
-        shadows
-        style={{
-          backgroundImage: 'url("bg.jpg")',
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-        }}
-        camera={{ position: [2, -15, 5] }}
-      >
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage: 'url("bg.jpg")',
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+      }}
+    >
+      <Canvas shadows camera={{ position: [2, -15, 5] }}>
         <ambientLight color="white" intensity={0.4} />
 
         <Sun position={[0, 0, 0]} />
@@ -96,6 +97,8 @@ export default function ThreeDModel() {
 
         <Controls />
       </Canvas>
+
+      <Panel />
     </div>
   );
 }
