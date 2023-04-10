@@ -15,7 +15,7 @@ First Three.js Project
 - <strike>Fix planet rotation to keep vertical axis fixed</strike>
 - <strike>Double check planet acutal sizes</strike>
 - <strike>Add controls holding bar</strike>
-- Fix planet wrapping photo direction
+- <strike>Fix planet wrapping photo direction</strike>
 - Add intorductory texts (tooltips to planets)
 - Add "earth days" counter
 - Add interactive controls
