@@ -27,13 +27,22 @@ function Control(props) {
           break;
         case "ArrowRight":
           camera.position.x += 1;
+          break;
         case "X":
+          camera.rotation.x += 0.25;
+          break;
         case "x":
           camera.rotation.x -= 0.25;
+          break;
         case "Y":
+          camera.rotation.y += 0.25;
+          break;
         case "y":
           camera.rotation.y -= 0.25;
+          break;
         case "Z":
+          camera.rotation.z += 0.25;
+          break;
         case "z":
           camera.rotation.z -= 0.25;
           break;
